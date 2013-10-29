@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to the Second interface, Kindly Enter the keyword(s) to be searched below
+  <form method="get">
+  strong Enter keyword(s) here: <br>
+  <textarea name="keyword" cols="45" row="1900">
+  </textarea><br><br>
+  <input type="submit" ,value="Submit">
+  <br><br>
+  strong The paragraph matching the keyword is: <br>
+  each item in data
+    h1= item.para
